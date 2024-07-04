@@ -1,0 +1,52 @@
+html, body, .main, #main, label, .forma, p{
+  background-color: #000000;
+  color: white;
+}
+
+ul,li{
+  background-color: #1f1f1f;
+  color: white;
+}
+
+li a{
+  color: white;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #aaa;
+    color: black;
+}
+
+form{
+  border: 3px solid #000;
+}
+
+#main-prof, #main-prof form {
+    background-color: #1d1d1d;
+    border-color: #1d1d1d;
+}
+
+#main-prof h2 {
+    color: #04AA6D;
+}
+
+table {
+  background-color: #aaa;
+  color: #000;
+}
+
+#main-opis-posla {
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
+}
+
+#bitno {
+  background-color: #1d1d1d;
+  border-color: #1d1d1d;
+  padding: 5px;
+}

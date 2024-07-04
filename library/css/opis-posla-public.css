@@ -1,0 +1,43 @@
+#main-opis-posla {
+    margin-top: inherit;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#main-opis-posla h2 {
+    color: #04AA6D;
+    margin-bottom: 20px;
+}
+
+.opis-posla {
+    list-style-type: circle;
+}
+
+.imgcontainer-opis-posla {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.pr {
+    width: 70%;
+}
+
+img.snimanja {
+    width: 49%;
+}
+
+#main-opis-posla h3 {
+    color: #04AA6D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bitno {
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+.table-style-one {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-style-one th, .table-style-one td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: left;
+}
+
+.table-style-one th {
+    background-color: #04AA6D;
+}
+
+.linijaa{
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+/* da ne stvaram puno CSS-a ovdje će se nalaziti
+    i za micanjedemosa_html.php CSS :) */
+
+.micdemosa {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 3px solid #04AA6D;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.table-style-two {
+    border-collapse: separate;
+    border-spacing: 10px;
+    font-size: 20px;
+}
+
+.table-style-two th, .table-style-two td {
+    border-collapse: collapse;
+    padding: 7px;
+}
+
+/*ZA GUMB*/
+.crven_gumb:link, .crven_gumb:visited {
+    background-color: #f44336;
+    color: white;
+    font-weight: 100;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.crven_gumb:hover, .crven_gumb:active {
+    background-color: red;
+  }
+
+.crven_gumb {
+    float: right;
+}
+
+#popissati
+{
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #f2f2f2;
+  float: left;
+}
+
+#popissati th,
+#popissati td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+#popissati th {
+  background-color: #04AA6D;
+}
+
+#satiforma{
+  margin-left: 10px;
+  padding-left: 10px;
+  border: none;
+}

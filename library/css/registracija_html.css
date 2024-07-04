@@ -1,0 +1,38 @@
+body {
+    height: 1000px;
+    color: #333;
+}
+
+#main {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-left: 25%;
+}
+
+#main h2 {
+    color: #04AA6D;
+    margin-bottom: 20px;
+}
+
+
+#main label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#main input[type="text"],
+#main input[type="email"],
+#main input[type="password"],
+#main select {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

@@ -1,0 +1,264 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery {
+    flex: 1 1 33.33%; /* Podesi širinu svake slike na 33.33% */
+    box-sizing: border-box;
+    padding: 5px; /* Opcionalno, dodaj razmak između slika */
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/*Dodavanje novog CSS-a za galeriju, prethodni CSS za "gallery" ostaje u slucaju da se vec koristi :)
+    Zato je naziv ovoga na hrvatskom -> galerija*/
+    div.galerija {
+        border: 1px solid #ccc;
+    }
+
+    div.galerija:hover {
+        border: 1px solid #777;
+    }
+
+    div.galerija img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.galerija-desc {
+        padding: 10px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    } /*kako bi slike bile jedna pored druge*/
+
+    .galerija-responsive {
+        padding: 0 6px;
+        float: left;
+        width: 33.33333%;
+        /* ovo omogucuje broj slika u jednom retku 100/3 = 33.33333 -> dakle 3 slike
+        Tako da ipak bude malo povecana velicina samih slika, po zelji moze i vise ako zelimo npr. 2 -> width: 50%;
+        za manje -> width: 24.99999%;*/
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    /* Obavijest za galeriju i objavljivanje slika */
+    .galerija-alert {
+        padding: 20px;
+        background-color: #04AA6D;
+        color: white;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+      }
+
+      /* Iksic */
+      .galerija-closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+
+      }
+
+      .galerija-closebtn:hover {
+        color: black;
+      }
+
+/* CSS za upravljanje galerijom u podstranici "Za Admina" */
+.upravljanje-form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    color:black; /*obavezno zbog dark modea*/
+}
+
+.upravljanje-input-file, .upravljanje-button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.upravljanje-button {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.upravljanje-button:hover {
+    background-color: #0ac581;
+}
+
+#naslov-galerija{
+    font-family:'Brush Script MT';
+    margin-left: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*CSS za obavijesti zbog toga da se na napravi još jedan dodatan CSS i tako prenatrpa!*/
+
+#obavijesti-h2{
+    margin-top: -20px;
+    font-family: 'Lucida Console';
+}
+
+#prethodne-h2{
+    font-family: 'Lucida Console';
+    text-align: center;
+}
+
+.obavijesti-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+.obavijesti-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.obavijesti-content {
+    margin-top: 10px;
+}
+
+.obavijesti-date_time {
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* za pisanje obavijesti */
+.obavijest-form .form-group {
+    margin-bottom: 15px;
+}
+
+.obavijest-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.obavijest-form input[type="text"],
+.obavijest-form textarea {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.obavijest-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.obavijest-form button[type="submit"] {
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.obavijest-form button[type="reset"] {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.obavijest-form button[type="submit"]:hover,
+.obavijest-form button[type="reset"]:hover {
+    opacity: 0.9;
+}
+
+/*za sve obavijesti gumb*/
+.obavijesti-sve-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    margin-top: -10px;
+}
+
+.sve-obavijesti-form button {
+    padding: 10px 20px;
+    border: none;
+    outline-color: none;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
+
+.sve-obavijesti-form button:hover {
+    background-color: #0ac581;
+}
+
+
+.obavijesti-sve-container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    margin-top: -60px;
+}
+
+/*CSS za vecu verziju slike*/
+* {
+box-sizing: border-box;
+}
+
+.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+    width: 100%;
+}
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}

@@ -1,0 +1,15 @@
+#main-prof {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#main-prof h2 {
+    color: #04AA6D;
+    margin-bottom: 20px;
+}
